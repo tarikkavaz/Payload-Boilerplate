@@ -374,7 +374,7 @@ export const seed = async ({
   const product1Doc = await payload.create({
     collection: 'products',
     data: JSON.parse(
-      JSON.stringify({ ...product1, categories: [peripheralsCategory.id] })
+      JSON.stringify({ ...product1, categories: [keyboardsCategory.id] })
         .replace(/"\{\{IMAGE_1\}\}"/g, String(image1ID))
         .replace(/"\{\{IMAGE_2\}\}"/g, String(image2ID))
         .replace(/"\{\{AUTHOR\}\}"/g, String(demoAuthorID)),
@@ -394,7 +394,7 @@ export const seed = async ({
   const product3Doc = await payload.create({
     collection: 'products',
     data: JSON.parse(
-      JSON.stringify({ ...product3, categories: [keyboardsCategory.id] })
+      JSON.stringify({ ...product3, categories: [peripheralsCategory.id] })
         .replace(/"\{\{IMAGE_1\}\}"/g, String(image3ID))
         .replace(/"\{\{IMAGE_2\}\}"/g, String(image1ID))
         .replace(/"\{\{AUTHOR\}\}"/g, String(demoAuthorID)),
