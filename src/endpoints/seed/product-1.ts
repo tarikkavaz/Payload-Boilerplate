@@ -1,0 +1,288 @@
+import type { Product } from '@/payload-types'
+
+export const product1: Partial<Product> = {
+  slug: 'mechanical-keyboard-revolution',
+  _status: 'published',
+  // @ts-ignore
+  authors: ['{{AUTHOR}}'],
+  content: {
+    root: {
+      type: 'root',
+      children: [
+        {
+          type: 'heading',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'Explore the world of mechanical keyboards, where precision meets personalization. A journey through switches, keycaps, and tactile excellence.',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          tag: 'h2',
+          version: 1,
+        },
+        {
+          type: 'block',
+          fields: {
+            blockName: 'Disclaimer',
+            blockType: 'banner',
+            content: {
+              root: {
+                type: 'root',
+                children: [
+                  {
+                    type: 'paragraph',
+                    children: [
+                      {
+                        type: 'text',
+                        detail: 0,
+                        format: 1,
+                        mode: 'normal',
+                        style: '',
+                        text: 'Disclaimer:',
+                        version: 1,
+                      },
+                      {
+                        type: 'text',
+                        detail: 0,
+                        format: 0,
+                        mode: 'normal',
+                        style: '',
+                        text: ' This content is fabricated and for demonstration purposes only. To edit this product, ',
+                        version: 1,
+                      },
+                      {
+                        type: 'link',
+                        children: [
+                          {
+                            type: 'text',
+                            detail: 0,
+                            format: 0,
+                            mode: 'normal',
+                            style: '',
+                            text: 'navigate to the admin dashboard',
+                            version: 1,
+                          },
+                        ],
+                        direction: 'ltr',
+                        fields: {
+                          linkType: 'custom',
+                          newTab: true,
+                          url: '/admin',
+                        },
+                        format: '',
+                        indent: 0,
+                        version: 3,
+                      },
+                      {
+                        type: 'text',
+                        detail: 0,
+                        format: 0,
+                        mode: 'normal',
+                        style: '',
+                        text: '.',
+                        version: 1,
+                      },
+                    ],
+                    direction: 'ltr',
+                    format: '',
+                    indent: 0,
+                    textFormat: 0,
+                    version: 1,
+                  },
+                ],
+                direction: 'ltr',
+                format: '',
+                indent: 0,
+                version: 1,
+              },
+            },
+            style: 'info',
+          },
+          format: '',
+          version: 2,
+        },
+        {
+          type: 'heading',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'The Art of Mechanical Switches',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          tag: 'h2',
+          version: 1,
+        },
+        {
+          type: 'paragraph',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'In the realm of mechanical keyboards, switches are the heart of the typing experience. From the crisp click of Blue switches to the smooth glide of Red linears, each variant offers a unique feel and sound signature. Modern keyboards have evolved beyond simple input devices into customizable tools that enhance productivity and provide tactile satisfaction with every keystroke.',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          textFormat: 0,
+          version: 1,
+        },
+        {
+          type: 'heading',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'To demonstrate basic AI functionality, here is a javascript snippet that makes a PRODUCT request to a generic AI API in order to generate text based on a prompt. ',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          tag: 'h4',
+          version: 1,
+        },
+        {
+          type: 'block',
+          fields: {
+            blockName: 'Generate Text',
+            blockType: 'code',
+            code: "async function generateText(prompt) {\n    const apiKey = 'your-api-key';\n    const apiUrl = 'https://api.example.com/generate-text';\n\n    const response = await fetch(apiUrl, {\n        method: 'PRODUCT',\n        headers: {\n            'Content-Type': 'application/json',\n            'Authorization': `Bearer ${apiKey}`\n        },\n        body: JSON.stringify({\n            model: 'text-generation-model',\n            prompt: prompt,\n            max_tokens: 50\n        })\n    });\n\n    const data = await response.json();\n    console.log(data.choices[0].text.trim());\n}\n\n// Example usage\ngenerateText(\"Once upon a time in a faraway land,\");\n",
+            language: 'javascript',
+          },
+          format: '',
+          version: 2,
+        },
+        {
+          type: 'heading',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'Customization: Making Your Keyboard Truly Yours',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          tag: 'h2',
+          version: 1,
+        },
+        {
+          type: 'paragraph',
+          children: [
+            {
+              type: 'text',
+              detail: 0,
+              format: 0,
+              mode: 'normal',
+              style: '',
+              text: 'The beauty of mechanical keyboards lies in their modularity. Every component, from keycaps to stabilizers, can be customized to create a typing experience that perfectly matches your preferences. With options ranging from artisan keycaps to custom cables, the possibilities for personalization are endless.',
+              version: 1,
+            },
+          ],
+          direction: 'ltr',
+          format: '',
+          indent: 0,
+          textFormat: 0,
+          version: 1,
+        },
+        {
+          type: 'block',
+          fields: {
+            blockName: '',
+            blockType: 'mediaBlock',
+            media: '{{IMAGE_2}}',
+          },
+          format: '',
+          version: 2,
+        },
+        {
+          type: 'block',
+          fields: {
+            blockName: 'Dynamic Components',
+            blockType: 'banner',
+            content: {
+              root: {
+                type: 'root',
+                children: [
+                  {
+                    type: 'paragraph',
+                    children: [
+                      {
+                        type: 'text',
+                        detail: 0,
+                        format: 0,
+                        mode: 'normal',
+                        style: '',
+                        text: "This content above is completely dynamic using custom layout building blocks configured in the CMS. This can be anything you'd like from rich text and images, to highly designed, complex components.",
+                        version: 1,
+                      },
+                    ],
+                    direction: 'ltr',
+                    format: '',
+                    indent: 0,
+                    textFormat: 0,
+                    version: 1,
+                  },
+                ],
+                direction: 'ltr',
+                format: '',
+                indent: 0,
+                version: 1,
+              },
+            },
+            style: 'info',
+          },
+          format: '',
+          version: 2,
+        },
+      ],
+      direction: 'ltr',
+      format: '',
+      indent: 0,
+      version: 1,
+    },
+  },
+  price: 159.99,
+  currency: '$',
+  buy: 'https://mechanicalkeyboards.com/shop',
+  shop: 'MechanicalKeyboards.com',
+  meta: {
+    description:
+      'Explore the world of mechanical keyboards, where precision meets personalization. A journey through switches, keycaps, and tactile excellence.',
+    // @ts-ignore
+    image: '{{IMAGE_1}}',
+    title: 'Mechanical Keyboard Revolution: Crafting the Perfect Type',
+  },
+  relatedProducts: [], // this is populated by the seed script
+  title: 'Mechanical Keyboard Revolution: Crafting the Perfect Type',
+}
